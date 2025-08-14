@@ -1,0 +1,86 @@
+ 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    background-color:#548687;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    /* gap: 5px; */
+ }
+ .main-container{
+   height: 100vmin;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+ }
+ #winner{
+    /* color: white; */
+    font-size: 5vmin;
+    text-transform: capitalize;
+    padding: 10px;
+  }
+  
+ .hide{
+   display:none;
+ }
+ .new-game{
+    padding: 10px 1rem;
+    background-color: #264653;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+ }
+h1{
+   text-align: center;
+    /* color:hsl(0, 6%, 94%); */
+    margin: 10vmin;
+ }
+ .container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     }
+ .game{
+    height: 60vmin;
+    width: 57vmin;
+    background-color: hsl(313, 6%, 50%) ;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    border: 1px solid  lab(77.42% 0.35 0.11);
+ }
+ .box{
+    height: 17vmin;
+    width: 17vmin;
+    background-color: lch(88.18% 13.26 335.32 / 0.618);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #344e41;
+    cursor: pointer;
+ }
+ .reset-btn{
+    padding: 10px 1rem;
+    /* color: white; */
+    background-color: #264653;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+ }
