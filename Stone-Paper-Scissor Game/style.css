@@ -1,54 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color:#d7b9d5;
+
+body {
+    background-color: #d7b9d5;
     text-align: center;
 }
-h1{
+
+h1 {
     background-color: hsl(240, 64%, 11%);
     color: #bababa;
     line-height: 3rem;
 }
 
 
-.Game-container{
-     height: 40vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 3rem;
+.Game-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
-.icon{
+
+.icon {
     height: 160px;
     width: 160px;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.icon:hover{
-    background-color:hsl(240, 64%, 11%) ;
+
+.icon:hover {
+    background-color: hsl(240, 64%, 11%);
 }
-.icon img{
+
+.icon img {
     height: 150px;
     width: 150px;
-     border-radius: 50%;
-     object-fit: cover;
-     cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
-.Scores{
+
+.Scores {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin:50px;
+    margin: 50px;
 }
-.score span{
-      font-size: 3rem;
+
+.score span {
+    font-size: 3rem;
 }
-#msg{
+
+#msg {
     background-color: #181836;
     color: white;
     padding: 0.5rem 2rem;
