@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing Floating Bubbles</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at center, #0a0f24, #000);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 10;
+      font-size: 3em;
+      text-shadow: 0 0 15px cyan;
+    }
+
+    .bubbles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -150px;
+      background: rgba(0, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    /* Generate multiple random bubbles */
+    .bubble:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-delay: 1s; animation-duration: 12s; }
+    .bubble:nth-child(2) { left: 20%; width: 25px; height: 25px; animation-delay: 3s; animation-duration: 10s; }
+    .bubble:nth-child(3) { left: 30%; width: 60px; height: 60px; animation-delay: 2s; animation-duration: 15s; }
+    .bubble:nth-child(4) { left: 40%; width: 20px; height: 20px; animation-delay: 4s; animation-duration: 9s; }
+    .bubble:nth-child(5) { left: 50%; width: 45px; height: 45px; animation-delay: 1s; animation-duration: 14s; }
+    .bubble:nth-child(6) { left: 60%; width: 35px; height: 35px; animation-delay: 5s; animation-duration: 11s; }
+    .bubble:nth-child(7) { left: 70%; width: 55px; height: 55px; animation-delay: 2s; animation-duration: 13s; }
+    .bubble:nth-child(8) { left: 80%; width: 25px; height: 25px; animation-delay: 3s; animation-duration: 10s; }
+    .bubble:nth-child(9) { left: 90%; width: 50px; height: 50px; animation-delay: 6s; animation-duration: 12s; }
+    .bubble:nth-child(10){ left: 95%; width: 30px; height: 30px; animation-delay: 1s; animation-duration: 9s; }
+
+  </style>
+</head>
+<body>
+  <h1>✨ Floating Bubbles ✨</h1>
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+</body>
+</html>
